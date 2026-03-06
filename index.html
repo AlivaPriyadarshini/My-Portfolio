@@ -12,6 +12,98 @@
     <div class="logo">
       <h2>Aliva</h2>
     </div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <button id="themeBtn">🌞 Light Mode</button>
+    </nav>
    </header>
+
+   
+  <!-- HOME -->
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h1>I’m <span>Aliva</span></h1>
+      <h3>Front-End Developer</h3>
+      <br>
+      <p>I design and build beautiful, responsive websites using modern web technologies.</p>
+      <br>
+      <a href="#projects" class="btn">View Projects</a>
+    </div>
+    <div class="hero-img">
+      <img src="./assets/images/prof.png" alt="profile">
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About Me</h2>
+    <br>
+    <p>Hi, I'm a beginner web developer. I craft simple, clean websites with HTML, CSS, and JavaScript. With a focus on user experience and responsive design, I bring ideas to life. Let's collaborate to create something impactful and memorable.</p>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <br>
+    <div class="projects">
+     <div class="card">
+      <img src="./images/calculator.png" alt="Calculator">
+      <h3>Calculator</h3>
+      <br>
+      <a href="./projects/calculator.zip" download>
+      <button class="btn">Download Project</button>
+      </a>
+    </div>
+      <div class="card">
+        <img src="./assets/images/cactus.avif" alt="Portfolio Website">
+        <h3>Portfolio Website</h3>
+        <br>
+        <a href="./projects/portfolio.zip" download>
+          <button class="btn">Download Project</button>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="contact-form">
+      <h2>Contact Me</h2>
+      <br>
+      <p>Feel free to reach out if you want to work together or have any questions.</p>
+      <br>
+      <form id="contact-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Your Email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Your message" required></textarea>
+        </div>
+        <button type="submit" class="btn">Send message</button>
+        <button type="reset" class="btn">Reset message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; <span id="year"></span> Aliva. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Link to JS file -->
+
+  <script src="./script.js"></script>
+
 </body>
 </html>
